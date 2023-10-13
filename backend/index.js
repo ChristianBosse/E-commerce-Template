@@ -1,10 +1,12 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 const products = require("./data/products");
 const port = process.env.PORT || 5000;
 
 const app = express();
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.send("API is running...");
