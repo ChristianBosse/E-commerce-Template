@@ -14,6 +14,7 @@ import "./assets/styles/index.css";
 import Home from "./pages/Home/Home.jsx";
 import ProductDesc from "./pages/Product/ProductDesc.jsx";
 import CartPage from "./pages/Cart/CartPage";
+import LoginPage from "./pages/Login/LoginPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
             <Route index={true} path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDesc />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/login" element={<LoginPage />} />
         </Route>
     )
 );
